@@ -11,7 +11,6 @@
 <meta name="author" content="Burgerhood" />
 <link rel="canonical" href="https://burgerhood.pk/" />
 
-<!-- Open Graph -->
 <meta property="og:type" content="restaurant.restaurant" />
 <meta property="og:site_name" content="Burgerhood" />
 <meta property="og:title" content="Burgerhood — Premium Burgers in Islamabad" />
@@ -20,26 +19,21 @@
 <meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200&h=630&fit=crop&auto=format" />
 <meta property="og:locale" content="en_PK" />
 
-<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Burgerhood — Premium Burgers in Islamabad" />
 <meta name="twitter:description" content="Hand-pressed patties, signature sauces and cinematic flavour. F-7 Markaz, Islamabad." />
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200&h=630&fit=crop&auto=format" />
 
-<!-- Favicons (SVG + inline data URI for portability) -->
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%230E0E10"/><path d="M18 18h20a14 14 0 0 1 0 28H18V18zm8 8v12h12a6 6 0 0 0 0-12H26z" fill="%23E63946"/></svg>' />
-<link rel="icon" type="image/png" sizes="32x32" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaUlEQVR42u3RMQ0AIBAEwYEC+NeAChhQgB4IKAAFDLZzc3OzQ3b39J7nOwGfE/A5AZ8T8DkBnxPwOQGfE/A5AZ8T8DkBnxPwOQGfE/A5AZ8T8DkBnxPwOQGfE/A5AZ8T8DkBnxPwOQGfE/A5AZ8T8DkBnxPwOQGfE/A5AZ8T8DkBnxPwOYGsB0OWBYyM4i89AAAAAElFTkSuQmCC' />
 <link rel="apple-touch-icon" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"><rect width="180" height="180" rx="36" fill="%230E0E10"/><path d="M50 50h56a40 40 0 0 1 0 80H50V50zm22 22v36h34a18 18 0 0 0 0-36H72z" fill="%23E63946"/></svg>' />
 <link rel="manifest" href='data:application/manifest+json;charset=utf-8,{"name":"Burgerhood","short_name":"Burgerhood","start_url":"/","display":"standalone","background_color":"%230E0E10","theme_color":"%230E0E10","icons":[{"src":"data:image/svg%2Bxml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 192 192%22><rect width=%22192%22 height=%22192%22 rx=%2236%22 fill=%22%230E0E10%22/><path d=%22M54 54h60a42 42 0 0 1 0 84H54V54zm24 24v36h36a18 18 0 0 0 0-36H78z%22 fill=%22%23E63946%22/></svg>","sizes":"192x192","type":"image/svg+xml"}]}' />
 
-<!-- Preconnect -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preconnect" href="https://images.unsplash.com" />
 
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-<!-- Structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -76,7 +70,6 @@
 </script>
 
 <style>
-/* ---------- RESET ---------- */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
@@ -93,7 +86,6 @@ a{color:inherit;text-decoration:none}
 button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 ul{list-style:none}
 
-/* ---------- TOKENS ---------- */
 :root{
   --bg:#0E0E10;
   --bg-2:#141417;
@@ -111,7 +103,6 @@ ul{list-style:none}
   --ease:cubic-bezier(.2,.7,.2,1);
 }
 
-/* ---------- GRAIN OVERLAY ---------- */
 body::before{
   content:"";
   position:fixed;inset:0;
@@ -122,7 +113,6 @@ body::before{
   z-index:200;
 }
 
-/* ---------- LAYOUT ---------- */
 .container{
   width:100%;
   max-width:var(--container);
@@ -130,7 +120,6 @@ body::before{
   padding:0 clamp(20px,4vw,48px);
 }
 
-/* ---------- NAV ---------- */
 .nav{
   position:fixed;top:0;left:0;right:0;
   z-index:100;
@@ -157,7 +146,7 @@ body::before{
   color:var(--ink-2);
 }
 .brand-mark{
-  width:38px;height:38px;
+  width:40px;height:40px;
   display:grid;place-items:center;
   background:linear-gradient(135deg,#1A1A1D 0%,#0E0E10 100%);
   border:1px solid var(--line);
@@ -229,7 +218,6 @@ body::before{
 .burger-btn.open span::before{top:0;transform:rotate(45deg)}
 .burger-btn.open span::after{top:0;transform:rotate(-45deg)}
 
-/* ---------- MOBILE MENU ---------- */
 .mobile-menu{
   position:fixed;inset:0;
   background:rgba(14,14,16,.96);
@@ -260,7 +248,6 @@ body::before{
   font-weight:600;text-align:center;letter-spacing:.08em;text-transform:uppercase;font-size:14px;
 }
 
-/* ---------- HERO ---------- */
 .hero{
   position:relative;
   min-height:100vh;
@@ -319,8 +306,8 @@ body::before{
 .hero h1 .accent::after{
   content:"";position:absolute;left:0;right:0;bottom:.08em;height:3px;background:var(--red);opacity:.5;
 }
-.hero h1 .stroke{
-  -webkit-text-stroke:1.5px var(--silver-2);
+.hero h1 .outline{
+  -webkit-text-stroke:1.5px var(--ink-2);
   color:transparent;
 }
 .hero-sub{
@@ -380,33 +367,31 @@ body::before{
   100%{transform:scaleY(0);transform-origin:bottom}
 }
 
-/* ---------- MARQUEE ---------- */
 .marquee{
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
   background:var(--bg-2);
-  padding:22px 0;
+  padding:28px 0;
   overflow:hidden;
   position:relative;
 }
 .marquee-track{
-  display:flex;gap:60px;
-  animation:marquee 40s linear infinite;
+  display:flex;gap:80px;
+  animation:marquee 50s linear infinite;
   white-space:nowrap;
   font-family:'Space Grotesk',sans-serif;
-  font-size:22px;
+  font-size:24px;
   font-weight:500;
   color:var(--silver-2);
   letter-spacing:.02em;
 }
-.marquee-track span{display:inline-flex;align-items:center;gap:60px}
+.marquee-track span{display:inline-flex;align-items:center;gap:80px}
 .marquee-track .dot{width:8px;height:8px;background:var(--red);border-radius:50%;display:inline-block}
 @keyframes marquee{
   from{transform:translateX(0)}
   to{transform:translateX(-50%)}
 }
 
-/* ---------- SECTION HEAD ---------- */
 section{padding:clamp(80px,10vw,140px) 0;position:relative}
 .section-head{
   display:flex;align-items:flex-end;justify-content:space-between;gap:40px;
@@ -438,7 +423,6 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
   line-height:1.7;
 }
 
-/* ---------- SIGNATURE BURGERS ---------- */
 .signatures{background:var(--bg)}
 .sig-grid{
   display:grid;
@@ -517,18 +501,62 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
 .sig-c{grid-column:span 4;aspect-ratio:4/5}
 .sig-d{grid-column:span 8;aspect-ratio:16/10}
 
-/* ---------- MENU ---------- */
-.menu-sec{background:var(--bg-2);position:relative}
-.menu-sec::before{
+.craft{background:var(--bg-2);position:relative;overflow:hidden}
+.craft::before{
   content:"";position:absolute;inset:0;
   background:radial-gradient(800px 400px at 50% 0%,rgba(230,57,70,.08),transparent 70%);
   pointer-events:none;
 }
+.craft-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+}
+.craft-item{
+  position:relative;
+  aspect-ratio:3/4;
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:var(--bg-3);
+  border:1px solid var(--line);
+}
+.craft-item .img{
+  position:absolute;inset:0;
+  background-size:cover;background-position:center;
+  transition:transform .7s var(--ease);
+}
+.craft-item:hover .img{transform:scale(1.05)}
+.craft-item::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 40%,rgba(10,10,12,.9) 100%);
+}
+.craft-item .content{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:24px;
+  z-index:2;
+}
+.craft-item .num{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:11px;letter-spacing:.3em;color:var(--red);
+  margin-bottom:8px;
+}
+.craft-item h4{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:20px;font-weight:600;
+  color:var(--ink-2);
+  margin-bottom:6px;
+}
+.craft-item p{
+  font-size:13px;color:var(--silver-2);
+  line-height:1.5;
+}
+
+.menu-sec{background:var(--bg);position:relative}
 .menu-tabs{
   display:flex;gap:8px;
   margin-bottom:56px;
   padding:6px;
-  background:var(--bg-3);
+  background:var(--bg-2);
   border:1px solid var(--line);
   border-radius:999px;
   width:fit-content;
@@ -551,60 +579,73 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
 
 .menu-grid{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:1px;
-  background:var(--line);
-  border:1px solid var(--line);
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  gap:20px;
+}
+.menu-card{
+  position:relative;
+  aspect-ratio:4/5;
   border-radius:var(--radius);
   overflow:hidden;
-}
-.menu-item{
-  background:var(--bg-2);
-  padding:32px;
-  display:flex;gap:24px;align-items:flex-start;
-  transition:background .3s var(--ease);
-  position:relative;
-}
-.menu-item:hover{background:var(--bg-3)}
-.menu-item .thumb{
-  width:96px;height:96px;flex-shrink:0;
-  border-radius:12px;
-  background-size:cover;background-position:center;
+  background:var(--bg-3);
   border:1px solid var(--line);
+  cursor:pointer;
+  transition:transform .5s var(--ease),border-color .5s var(--ease);
 }
-.menu-item .info{flex:1;min-width:0}
-.menu-item h4{
+.menu-card:hover{border-color:rgba(230,57,70,.4);transform:translateY(-4px)}
+.menu-card .img{
+  position:absolute;inset:0;
+  background-size:cover;background-position:center;
+  transition:transform .7s var(--ease);
+}
+.menu-card:hover .img{transform:scale(1.05)}
+.menu-card::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 30%,rgba(10,10,12,.95) 100%);
+}
+.menu-card .content{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:24px;
+  z-index:2;
+}
+.menu-card h4{
   font-family:'Space Grotesk',sans-serif;
-  font-size:20px;font-weight:600;
+  font-size:22px;font-weight:600;
   color:var(--ink-2);
   margin-bottom:6px;
-  letter-spacing:-.005em;
 }
-.menu-item .desc{
-  font-size:14px;color:var(--silver);
-  line-height:1.6;
-  margin-bottom:14px;
+.menu-card .desc{
+  font-size:13px;color:var(--silver-2);
+  line-height:1.5;
+  margin-bottom:12px;
 }
-.menu-item .meta{
-  display:flex;align-items:center;gap:14px;
-  font-size:12px;color:var(--silver);
-  letter-spacing:.08em;text-transform:uppercase;
+.menu-card .tag{
+  display:inline-block;
+  font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--red);
+  margin-bottom:8px;
 }
-.menu-item .meta .dot{width:4px;height:4px;background:var(--silver);border-radius:50%}
-.menu-item .price{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:18px;font-weight:600;
+.menu-card .arrow{
+  position:absolute;top:20px;right:20px;
+  width:36px;height:36px;
+  display:grid;place-items:center;
+  background:rgba(14,14,16,.7);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;
   color:var(--ink-2);
-  white-space:nowrap;
-  align-self:center;
+  opacity:0;transform:translate(-10px,10px);
+  transition:opacity .4s var(--ease),transform .4s var(--ease);
+  z-index:2;
 }
+.menu-card:hover .arrow{opacity:1;transform:translate(0,0)}
+
 .menu-cta{
   margin-top:56px;
   display:flex;justify-content:center;
 }
 
-/* ---------- STORY ---------- */
-.story{background:var(--bg);position:relative;overflow:hidden}
+.story{background:var(--bg-2);position:relative;overflow:hidden}
 .story-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -616,7 +657,7 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
   aspect-ratio:4/5;
   border-radius:var(--radius);
   overflow:hidden;
-  background-image:url('https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1200&auto=format&fit=crop&q=80');
+  background-image:url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&auto=format&fit=crop&q=80');
   background-size:cover;background-position:center;
   filter:saturate(.95) contrast(1.05);
 }
@@ -677,8 +718,7 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
   font-size:18px;font-weight:500;color:var(--ink-2);
 }
 
-/* ---------- GALLERY ---------- */
-.gallery-sec{background:var(--bg-2)}
+.gallery-sec{background:var(--bg)}
 .gallery{
   display:grid;
   grid-template-columns:repeat(12,1fr);
@@ -699,16 +739,15 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
 }
 .g-item:hover::after{opacity:1}
 .g-item:hover{transform:scale(.98)}
-.g1{grid-column:span 5;grid-row:span 3;background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349?w=1200&auto=format&fit=crop&q=80')}
-.g2{grid-column:span 4;grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=1200&auto=format&fit=crop&q=80')}
-.g3{grid-column:span 3;grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1606131731446-5568d87113aa?w=1000&auto=format&fit=crop&q=80')}
-.g4{grid-column:span 3;grid-row:span 3;background-image:url('https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=1000&auto=format&fit=crop&q=80')}
-.g5{grid-column:span 4;grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=1200&auto=format&fit=crop&q=80')}
-.g6{grid-column:span 5;grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=1200&auto=format&fit=crop&q=80')}
-.g7{grid-column:span 7;grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=1400&auto=format&fit=crop&q=80')}
+.g1{grid-column:span 5;grid-row:span 3;background-image:url('https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1200&auto=format&fit=crop&q=80')}
+.g2{grid-column:span 4;grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=1200&auto=format&fit=crop&q=80')}
+.g3{grid-column:span 3;grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=1000&auto=format&fit=crop&q=80')}
+.g4{grid-column:span 3;grid-row:span 3;background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349?w=1000&auto=format&fit=crop&q=80')}
+.g5{grid-column:span 4;grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=1200&auto=format&fit=crop&q=80')}
+.g6{grid-column:span 5;grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=1200&auto=format&fit=crop&q=80')}
+.g7{grid-column:span 7;grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=1400&auto=format&fit=crop&q=80')}
 
-/* ---------- LOCATION ---------- */
-.location-sec{background:var(--bg);position:relative}
+.location-sec{background:var(--bg-2);position:relative}
 .loc-grid{
   display:grid;
   grid-template-columns:1.1fr .9fr;
@@ -730,7 +769,7 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
 .loc-info{
   display:flex;flex-direction:column;
   padding:40px;
-  background:var(--bg-2);
+  background:var(--bg);
   border:1px solid var(--line);
   border-radius:var(--radius);
 }
@@ -773,12 +812,11 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
   display:flex;gap:12px;flex-wrap:wrap;
 }
 
-/* ---------- CTA BAND ---------- */
 .cta-band{
   padding:clamp(80px,12vw,160px) 0;
   background:
     linear-gradient(180deg,rgba(14,14,16,.9),rgba(14,14,16,.7)),
-    url('https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=1800&auto=format&fit=crop&q=80') center/cover;
+    url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1800&auto=format&fit=crop&q=80') center/cover;
   text-align:center;
   position:relative;
   overflow:hidden;
@@ -803,7 +841,6 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
 }
 .cta-band .actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 
-/* ---------- FOOTER ---------- */
 footer{
   background:#08080A;
   padding:80px 0 32px;
@@ -848,11 +885,9 @@ footer{
 }
 .socials a:hover{border-color:var(--red);color:var(--red);transform:translateY(-2px)}
 
-/* ---------- REVEAL ---------- */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
 .reveal.in{opacity:1;transform:none}
 
-/* ---------- RESPONSIVE ---------- */
 @media (max-width:1024px){
   .hero-grid{grid-template-columns:1fr;gap:40px}
   .hero-meta{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:28px;flex-direction:row;flex-wrap:wrap;gap:24px}
@@ -862,6 +897,7 @@ footer{
   .sig-b{grid-column:span 6}
   .sig-c{grid-column:span 3}
   .sig-d{grid-column:span 3}
+  .craft-grid{grid-template-columns:repeat(2,1fr)}
   .story-grid{grid-template-columns:1fr;gap:48px}
   .loc-grid{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr 1fr;gap:40px}
@@ -870,10 +906,8 @@ footer{
   .nav-links,.nav-cta{display:none}
   .burger-btn{display:grid}
   .menu-grid{grid-template-columns:1fr}
-  .menu-item{flex-direction:column;gap:16px}
-  .menu-item .thumb{width:100%;height:180px}
-  .menu-item .price{align-self:flex-start}
   .sig-a,.sig-b,.sig-c,.sig-d{grid-column:span 6;aspect-ratio:4/5}
+  .craft-grid{grid-template-columns:1fr}
   .gallery{grid-auto-rows:120px}
   .g1,.g2,.g3,.g4,.g5,.g6,.g7{grid-column:span 6;grid-row:span 2}
   .g1{grid-row:span 3}
@@ -890,7 +924,6 @@ footer{
 </head>
 <body>
 
-<!-- NAV -->
 <header class="nav" id="nav">
   <div class="container nav-inner">
     <a href="#top" class="brand" aria-label="Burgerhood home">
@@ -923,7 +956,6 @@ footer{
   </div>
 </header>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <a href="#signatures">Signatures <span>01</span></a>
   <a href="#menu">Menu <span>02</span></a>
@@ -933,7 +965,6 @@ footer{
   <a class="cta" href="https://www.foodpanda.pk/" target="_blank" rel="noopener">Order Now</a>
 </div>
 
-<!-- HERO -->
 <main id="top">
 <section class="hero">
   <div class="hero-bg"></div>
@@ -941,11 +972,11 @@ footer{
   <div class="container">
     <div class="hero-grid">
       <div>
-        <div class="hero-eyebrow reveal">Islamabad · Est. F-7 Markaz</div>
+        <div class="hero-eyebrow reveal">Islamabad · F-7 Markaz</div>
         <h1 class="reveal">
           Burgers,<br/>
           built <span class="accent">bold.</span><br/>
-          <span class="stroke">Served loud.</span>
+          <span class="outline">Served loud.</span>
         </h1>
         <p class="hero-sub reveal">
           Hand-pressed patties, signature sauces and slow-toasted buns — engineered in the heart of F-7 Markaz for the city that knows its flavour.
@@ -979,7 +1010,6 @@ footer{
   <div class="hero-scroll">Scroll</div>
 </section>
 
-<!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
     <span>Signature Burgers <span class="dot"></span> Loaded Fries <span class="dot"></span> Thick Shakes <span class="dot"></span> Hand-pressed Patties <span class="dot"></span> F-7 Markaz <span class="dot"></span> Islamabad <span class="dot"></span></span>
@@ -987,7 +1017,6 @@ footer{
   </div>
 </div>
 
-<!-- SIGNATURES -->
 <section class="signatures" id="signatures">
   <div class="container">
     <div class="section-head">
@@ -1058,12 +1087,58 @@ footer{
   </div>
 </section>
 
-<!-- MENU -->
+<section class="craft">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-label reveal">02 — The Craft</div>
+        <h2 class="section-title reveal">How we <em>build</em> it.</h2>
+      </div>
+      <p class="section-desc reveal">Every component matters. From patty to bun, sauce to crunch — nothing is accidental.</p>
+    </div>
+
+    <div class="craft-grid">
+      <div class="craft-item reveal">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="content">
+          <div class="num">01</div>
+          <h4>The Patty</h4>
+          <p>Hand-pressed daily from fresh beef. No fillers, no shortcuts.</p>
+        </div>
+      </div>
+      <div class="craft-item reveal">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="content">
+          <div class="num">02</div>
+          <h4>The Bun</h4>
+          <p>Soft, fresh-baked, toasted to order. The foundation of every stack.</p>
+        </div>
+      </div>
+      <div class="craft-item reveal">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1601314167793-c3732fe43ee6?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="content">
+          <div class="num">03</div>
+          <h4>The Sauce</h4>
+          <p>Made in-house. Signature blends you won't find anywhere else.</p>
+        </div>
+      </div>
+      <div class="craft-item reveal">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="content">
+          <div class="num">04</div>
+          <h4>The Crunch</h4>
+          <p>Loaded fries, crispy onions, fresh slaw — texture that completes the bite.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="menu-sec" id="menu">
   <div class="container">
     <div class="section-head">
       <div>
-        <div class="section-label reveal">02 — Menu</div>
+        <div class="section-label reveal">03 — Menu</div>
         <h2 class="section-title reveal">Browse the <em>full lineup.</em></h2>
       </div>
       <p class="section-desc reveal">From single patties to loaded plates, shakes to sides — built to order, served fast.</p>
@@ -1078,213 +1153,252 @@ footer{
     </div>
 
     <div class="menu-grid reveal" id="menuGrid">
-      <!-- Burgers -->
-      <div class="menu-item" data-cat="burgers">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="burgers">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Signature</div>
           <h4>The Hood Classic</h4>
           <p class="desc">House signature — beef patty, cheese, signature sauce, lettuce, toasted bun.</p>
-          <div class="meta"><span>Signature</span><span class="dot"></span><span>Beef</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="burgers">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="burgers">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Double</div>
           <h4>Double Smoke</h4>
           <p class="desc">Two hand-pressed patties, melted cheese, house smoke sauce.</p>
-          <div class="meta"><span>Double</span><span class="dot"></span><span>Smoky</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="burgers">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="burgers">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Spicy</div>
           <h4>Chilli Smash</h4>
           <p class="desc">Smashed patty, chilli crisp, pickled onions, toasted bun.</p>
-          <div class="meta"><span>Spicy</span><span class="dot"></span><span>Smashed</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="burgers">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="burgers">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Loaded</div>
           <h4>The Full Hood</h4>
           <p class="desc">Loaded — bacon, cheese, sauces, crunch, toasted bun.</p>
-          <div class="meta"><span>Loaded</span><span class="dot"></span><span>Signature</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="burgers">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="burgers">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Chicken</div>
           <h4>Crispy Chicken</h4>
           <p class="desc">Crunch-coated chicken, slaw, house mayo, soft bun.</p>
-          <div class="meta"><span>Chicken</span><span class="dot"></span><span>Crispy</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="burgers">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="burgers">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Savoury</div>
           <h4>Mushroom Melt</h4>
           <p class="desc">Beef patty, sautéed mushrooms, melted cheese, truffle mayo.</p>
-          <div class="meta"><span>Savoury</span><span class="dot"></span><span>Cheese</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
+      </a>
 
-      <!-- Sides -->
-      <div class="menu-item" data-cat="sides" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="sides" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Shareable</div>
           <h4>Loaded Fries</h4>
           <p class="desc">Crispy fries, cheese sauce, signature seasoning.</p>
-          <div class="meta"><span>Shareable</span><span class="dot"></span><span>Cheesy</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="sides" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1541592106381-b31e9677c064?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="sides" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1541592106381-b31e9677c064?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Classic</div>
           <h4>Classic Fries</h4>
           <p class="desc">Golden, salted, served hot.</p>
-          <div class="meta"><span>Classic</span><span class="dot"></span><span>Side</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="sides" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1639024471283-03518883512d?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="sides" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1639024471283-03518883512d?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Crispy</div>
           <h4>Onion Rings</h4>
           <p class="desc">Thick-cut, crisp-battered, served with dip.</p>
-          <div class="meta"><span>Crispy</span><span class="dot"></span><span>Side</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="sides" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1585109649139-366815a0d713?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="sides" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1585109649139-366815a0d713?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Chicken</div>
           <h4>Chicken Nuggets</h4>
           <p class="desc">Hand-breaded, served with your choice of dip.</p>
-          <div class="meta"><span>Chicken</span><span class="dot"></span><span>Shareable</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
+      </a>
 
-      <!-- Shakes -->
-      <div class="menu-item" data-cat="shakes" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
-          <h4>Chocolate Thick Shake</h4>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="shakes" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Thick</div>
+          <h4>Chocolate Shake</h4>
           <p class="desc">Rich cocoa, whipped top, drizzle.</p>
-          <div class="meta"><span>Thick</span><span class="dot"></span><span>Chocolate</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="shakes" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
-          <h4>Strawberry Thick Shake</h4>
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="shakes" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Fruit</div>
+          <h4>Strawberry Shake</h4>
           <p class="desc">Fresh strawberry blend, whipped cream.</p>
-          <div class="meta"><span>Thick</span><span class="dot"></span><span>Fruit</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="shakes" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
-          <h4>Oreo Thick Shake</h4>
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="shakes" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Cookie</div>
+          <h4>Oreo Shake</h4>
           <p class="desc">Crushed cookies, vanilla base, topped.</p>
-          <div class="meta"><span>Thick</span><span class="dot"></span><span>Cookie</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="shakes" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="shakes" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Nutty</div>
           <h4>Peanut Butter Shake</h4>
           <p class="desc">Roasted peanut butter, banana, milk.</p>
-          <div class="meta"><span>Thick</span><span class="dot"></span><span>Nutty</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
+      </a>
 
-      <!-- Drinks -->
-      <div class="menu-item" data-cat="drinks" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="drinks" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Chilled</div>
           <h4>Soft Drinks</h4>
           <p class="desc">Choice of chilled soft drinks.</p>
-          <div class="meta"><span>Chilled</span><span class="dot"></span><span>Classic</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="drinks" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1439554425546-9596f4687d6c?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="drinks" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1439554425546-9596f4687d6c?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Fresh</div>
           <h4>Fresh Lemonade</h4>
           <p class="desc">Freshly squeezed, served over ice.</p>
-          <div class="meta"><span>Fresh</span><span class="dot"></span><span>Citrus</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="drinks" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1587224083213-445977470969?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="drinks" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1587224083213-445977470969?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Still</div>
           <h4>Mineral Water</h4>
           <p class="desc">Still or sparkling.</p>
-          <div class="meta"><span>Still</span><span class="dot"></span><span>Sparkling</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="drinks" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1497534446932-c925b458416c?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="drinks" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1497534446932-c925b458416c?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Cold Brew</div>
           <h4>Iced Coffee</h4>
           <p class="desc">Cold-brewed, served over ice.</p>
-          <div class="meta"><span>Cold Brew</span><span class="dot"></span><span>Caffeine</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
+      </a>
 
-      <!-- Deals -->
-      <div class="menu-item" data-cat="deals" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="deals" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Combo</div>
           <h4>Hood Combo</h4>
           <p class="desc">Any signature burger + fries + drink.</p>
-          <div class="meta"><span>Combo</span><span class="dot"></span><span>Value</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="deals" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="deals" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">For Two</div>
           <h4>Double Deal</h4>
           <p class="desc">Two burgers + two drinks + shared fries.</p>
-          <div class="meta"><span>For Two</span><span class="dot"></span><span>Value</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="deals" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="deals" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Family</div>
           <h4>Family Platter</h4>
           <p class="desc">Burgers, loaded fries, nuggets, drinks — built for the table.</p>
-          <div class="meta"><span>Family</span><span class="dot"></span><span>Shareable</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
-      <div class="menu-item" data-cat="deals" hidden>
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=70')"></div>
-        <div class="info">
+      </a>
+      <a href="https://www.foodpanda.pk/" target="_blank" rel="noopener" class="menu-card" data-cat="deals" hidden>
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=80')"></div>
+        <div class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="content">
+          <div class="tag">Pair</div>
           <h4>Shake + Burger</h4>
           <p class="desc">Pair any burger with a thick shake.</p>
-          <div class="meta"><span>Pair</span><span class="dot"></span><span>Value</span></div>
         </div>
-        <div class="price">Order →</div>
-      </div>
+      </a>
     </div>
 
     <div class="menu-cta reveal">
@@ -1296,7 +1410,6 @@ footer{
   </div>
 </section>
 
-<!-- STORY -->
 <section class="story" id="story">
   <div class="container">
     <div class="story-grid">
@@ -1307,7 +1420,7 @@ footer{
         </div>
       </div>
       <div class="story-text">
-        <div class="section-label reveal">03 — The House</div>
+        <div class="section-label reveal">04 — The House</div>
         <h2 class="reveal">Built for the city that <em>knows</em> its burgers.</h2>
         <p class="reveal">Burgerhood is a neighbourhood kitchen with a single focus — serve burgers the way they should be served. Fresh buns, hand-pressed patties, sauces made in-house, and the kind of attention to detail that only comes from caring about every order.</p>
         <p class="reveal">Located in the heart of F-7 Markaz, we're a short walk from Margalla Road and a quick ride from most of central Islamabad. Come hungry, leave loud.</p>
@@ -1334,12 +1447,11 @@ footer{
   </div>
 </section>
 
-<!-- GALLERY -->
 <section class="gallery-sec" id="gallery">
   <div class="container">
     <div class="section-head">
       <div>
-        <div class="section-label reveal">04 — Gallery</div>
+        <div class="section-label reveal">05 — Gallery</div>
         <h2 class="section-title reveal">Straight from <em>the pass.</em></h2>
       </div>
       <p class="section-desc reveal">A closer look at what comes out of the kitchen — plated, stacked, and ready.</p>
@@ -1347,22 +1459,21 @@ footer{
 
     <div class="gallery reveal">
       <div class="g-item g1" role="img" aria-label="Signature burger close-up"></div>
-      <div class="g-item g2" role="img" aria-label="Cheeseburger with melted cheese"></div>
-      <div class="g-item g3" role="img" aria-label="Loaded fries"></div>
-      <div class="g-item g4" role="img" aria-label="Smashed burger with crisp edges"></div>
-      <div class="g-item g5" role="img" aria-label="Double stack burger"></div>
-      <div class="g-item g6" role="img" aria-label="Burger and fries combo"></div>
-      <div class="g-item g7" role="img" aria-label="Full hood loaded burger"></div>
+      <div class="g-item g2" role="img" aria-label="Loaded fries with cheese"></div>
+      <div class="g-item g3" role="img" aria-label="Thick chocolate shake"></div>
+      <div class="g-item g4" role="img" aria-label="Double stack burger"></div>
+      <div class="g-item g5" role="img" aria-label="Burger and fries combo"></div>
+      <div class="g-item g6" role="img" aria-label="Full hood loaded burger"></div>
+      <div class="g-item g7" role="img" aria-label="Kitchen preparation"></div>
     </div>
   </div>
 </section>
 
-<!-- LOCATION -->
 <section class="location-sec" id="location">
   <div class="container">
     <div class="section-head">
       <div>
-        <div class="section-label reveal">05 — Visit</div>
+        <div class="section-label reveal">06 — Visit</div>
         <h2 class="section-title reveal">Find us in <em>F-7 Markaz.</em></h2>
       </div>
       <p class="section-desc reveal">Walk in, order at the counter, or have it delivered across Islamabad.</p>
@@ -1433,7 +1544,6 @@ footer{
   </div>
 </section>
 
-<!-- CTA BAND -->
 <section class="cta-band">
   <div class="container inner">
     <h2>Hungry yet?<br/><em>Let's fix that.</em></h2>
@@ -1451,7 +1561,6 @@ footer{
 </section>
 </main>
 
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="foot-grid">
@@ -1518,16 +1627,13 @@ footer{
 </footer>
 
 <script>
-// Year
 document.getElementById('yr').textContent = new Date().getFullYear();
 
-// Nav scroll
 const nav = document.getElementById('nav');
 const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 24);
 window.addEventListener('scroll', onScroll, {passive:true});
 onScroll();
 
-// Mobile menu
 const burger = document.getElementById('burgerBtn');
 const mm = document.getElementById('mobileMenu');
 burger.addEventListener('click', () => {
@@ -1545,9 +1651,8 @@ mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   document.body.style.overflow = '';
 }));
 
-// Menu tabs
 const tabs = document.querySelectorAll('.menu-tab');
-const items = document.querySelectorAll('.menu-item');
+const items = document.querySelectorAll('.menu-card');
 tabs.forEach(t => t.addEventListener('click', () => {
   tabs.forEach(x => x.classList.remove('active'));
   t.classList.add('active');
@@ -1558,7 +1663,6 @@ tabs.forEach(t => t.addEventListener('click', () => {
   });
 }));
 
-// Reveal on scroll
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -1569,7 +1673,6 @@ const io = new IntersectionObserver((entries) => {
 }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Subtle parallax on hero image
 const heroImg = document.querySelector('.hero-img');
 if (heroImg && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
   let ticking = false;
